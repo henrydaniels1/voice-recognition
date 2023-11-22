@@ -7,6 +7,8 @@ var content = ''
 var isRecording = false
 var transcripts = JSON.parse(localStorage.getItem('transcripts')) || []
 recognition.continuous = true
+
+
 recognition.onstart = function() {
  output.textContent = "Voice Recognition is On"
  isRecording = true
@@ -78,4 +80,27 @@ document.getElementById('startBtn').addEventListener('click', function() {
  icon2.classList.toggle('hidden');
 });
 
+const copy = document.getElementById( 'copyBtn' );
+copy.addEventListener( 'click', function ()
+{
+    var copy1 = document.getElementById( 'copy2' );
+    copy2.classList.toggle( 'hidden' );
+})
 
+
+const delete1 = document.getElementById( 'deleteBtn' );
+delete1.addEventListener( 'click', function ()
+{
+    var delete11 = document.getElementById( 'delete2' );
+    delete11.classList.toggle( 'hidden' );
+    
+})
+
+
+
+const save1 = document.getElementById( 'saveBtn' );
+save1.addEventListener( 'click', function ()
+{
+    var save11 = document.getElementById( 'save2' );
+    save11.classList.toggle( 'hidden' );
+})

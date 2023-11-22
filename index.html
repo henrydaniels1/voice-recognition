@@ -9,20 +9,29 @@
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    
-    <div class="main w-full h-[100vh] bg-gradient-to-t from-indigo-700 to-blue-500">
+
+    <div class="main w-full h-[100vh] bg-gradient-to-t from-indigo-900 to-indigo-600">
         <div class=" md:w-[80%] w-[90%] mx-auto space-y-6 py-6 h-full px-2 flex flex-col justify-between ">
 
             <div class="space-y-6 flex flex-col">
-                 <div id="saveBtn" class="float-right flex items-center justify-end"><ion-icon name="save" class="w-[2rem] h-[2rem] text-white "></ion-icon></div>
-                <div id="previousRecording" class="cont bg-slate-200 rounded-lg shadow border border-white p-2 leading-8 h-[7rem] min-h-4  overflow-auto" aria-placeholder="history" placeholder="history"></div>   
+                 <div id="saveBtn" class="float-right flex items-center justify-end">
+                    <div class="flex flex-col">
+                    <ion-icon name="save-outline" class="w-[2rem] h-[2rem] text-white "></ion-icon>
+                    <p class="hidden text-white font-semibold" id="save2">Saved</p></div>
+                </div>
+                <div id="previousRecording" class="cont bg-slate-200 rounded-lg shadow border border-white p-2 leading-8 h-[7rem] min-h-4 
+                 overflow-auto" aria-placeholder="history" placeholder="history"></div>   
             </div>
             <div>
                 <div id="output" class="bg-slate-200  rounded-lg shadow border border-white p-2 leading-8"></div>
             </div>
 
             <div class="flex items-center justify-between">
-                <div id="deleteBtn"><ion-icon name="trash" class="w-[2rem] h-[2rem] text-white"></ion-icon></div>
+                <div id="deleteBtn" class="flex flex-col  items-center">
+                    <ion-icon name="trash-outline" class="w-[2rem] h-[2rem] text-white"></ion-icon>
+                <p class="hidden text-red-500 font-semibold" id="delete2">Deleted</p>
+            </div>
+                
                 
                 <div id="startBtn" class=" flex items-center justify-center relative border-2 flex border-gray-300 rounded-full w-[4rem] h-[4rem]">
                     
@@ -38,7 +47,8 @@
                     </div>
                 </div>
 
-                <div id="copyBtn"><ion-icon name="copy" class="w-[2rem] h-[2rem] text-white"></ion-icon></div>
+                <div id="copyBtn" class="flex flex-col items-center"><ion-icon name="copy-outline" class="w-[2rem] h-[2rem] text-white"></ion-icon>
+                <p class="hidden text-white font-semibold" id="copy2">Copied</p></div>
             </div>
 
         </div>
