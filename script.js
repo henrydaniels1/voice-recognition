@@ -103,4 +103,11 @@ save1.addEventListener( 'click', function ()
 {
     var save11 = document.getElementById( 'save2' );
     save11.classList.toggle( 'hidden' );
+   
 })
+
+setTimeout( function ()
+{
+    save11.classList.add( 'hidden' );
+},
+    2000 );
